@@ -91,6 +91,12 @@ class IdFactory {
 	isRaw(raw) {
 		return this[_raw_coder].isValidEncoding(raw);
 	}
+
+  // Initializers
+
+  reset() {
+		return this[_id].reset();
+	}
 }
 
 module.exports = { IdFactory };
