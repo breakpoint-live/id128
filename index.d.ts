@@ -114,7 +114,7 @@ export interface UuidFactory extends VersionedIdFactory<Uuid> {
 
 export interface Uuid1Factory extends IdFactory<Uuid1> {
 	generate(options?: NodeOption & TimeOption): Uuid1;
-  reset(): void;
+	reset(): void;
 }
 
 export interface Uuid4Factory extends IdFactory<Uuid4> {
@@ -123,7 +123,7 @@ export interface Uuid4Factory extends IdFactory<Uuid4> {
 
 export interface Uuid6Factory extends IdFactory<Uuid6> {
 	generate(options?: NodeOption & TimeOption): Uuid6;
-  reset(): void;
+	reset(): void;
 }
 
 export interface UuidNilFactory extends IdFactory<UuidNil> {
